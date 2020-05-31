@@ -18,7 +18,7 @@
             </li> --}}
             
             <li class="nav-item">
-              <a class="nav-link" href="/posts">Home</a>
+              <a class="nav-link" href="/posts">Index</a>
             </li> 
 
               @foreach($categories as $category)
