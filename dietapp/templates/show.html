@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block customcss %}
+  <link rel="stylesheet" type='text/css' href="{% static 'style.css' %}">
+{% endblock %}
+
+
+{% block header %}
+
+{% endblock header %}
+
+
+{% block content %}
+<div class="container">
+  <div class="alert alert-success" role="alert">
+   <h3>タイトル: {{ object_id.title}} </h3><br>
+   <p><img src="{{ object_id.images.url }}" alt="{{object_id.images}}" class="img-fluid" style="max-width:300px;"></p>
+   <div class="mb-4">{{ object_id.content|linebreaks }}</div>
+   <a href="{% url 'like' object_id.pk %}"><i class="far fa-thumbs-up" ></i> {{object_id.like}} </a>
+   
+  </div>
+
+<a href="{% url 'list' %}" class="btn btn-warning">一覧に戻る</a>
+</div>
+{% endblock content %}
