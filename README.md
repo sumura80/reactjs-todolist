@@ -1,7 +1,9 @@
 ### README
 ### React.js 管理App
 https://github.com/sumura80/reactjs-todolist
-動画：　https://www.youtube.com/watch?v=WVa0kzlVUws&feature=youtu.be
+
+ 
+動画：https://www.youtube.com/watch?v=WVa0kzlVUws&feature=youtu.be
 
 ## Overview
 ```
